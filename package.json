@@ -1,0 +1,17 @@
+{
+  "name": "mentoring",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "pg": "^7.10.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "up": "docker-compose up",
+    "down": "docker-compose down",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
