@@ -1,11 +1,10 @@
 const { Client } = require('pg')
 
-const CONNECTION_STR = 'postgres://test1:test1@localhost:5432/db-test'
-const client = new Client(CONNECTION_STR);
+const CONNECTION_STRING = 'postgres://test:test1234@localhost:7654/pg-db-test';
 
-init();
+const client = new Client(CONNECTION_STRING);
 
-async function init() {
+(async () => {
   await client.connect();
   
   client.query('SELECT * FROM Users ORDER BY id ASC', (err, res) => {
@@ -16,5 +15,5 @@ async function init() {
     }
     client.end();
   });
-}
+})()
 

@@ -1,13 +1,14 @@
 CREATE TABLE Users (
   id VARCHAR(100) PRIMARY KEY,
-  name VARCHAR(100) not null
+  firstName VARCHAR(100) not null,
+  lastName VARCHAR(100) not null
 );
 
-INSERT INTO Users (id, name)
-VALUES ('1', 'User 1');
+INSERT INTO Users (id, firstName, lastName)
+VALUES ('1', 'Aristrakh', 'Kaultsyn');
 
-INSERT INTO Users (id, name)
-VALUES ('2', 'User 2');
+INSERT INTO Users (id, firstName, lastName)
+VALUES ('2', 'Valeria', 'Shtolc');
 
-INSERT INTO Users (id, name)
-VALUES ('3', 'User 3');
+INSERT INTO Users (id, firstName, lastName)
+VALUES ('3', 'Daniil', 'Ssss');
